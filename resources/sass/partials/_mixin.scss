@@ -1,0 +1,23 @@
+/**********************************
+ * MIXIN
+ * utility
+ */
+
+// % FLEX STRUCTURES % 
+@mixin flex-row		{	display: flex; 																					}
+@mixin flex-row-co	{	display: flex;								justify-content: center; 							}
+@mixin flex-row-cv	{	display: flex; 															align-items: center;	}
+@mixin flex-row-cc	{	display: flex;								justify-content: center;	align-items: center;	}
+@mixin flex-col		{	display: flex;	flex-direction: column;															}
+@mixin flex-col-co	{	display: flex; 	flex-direction: column;									align-items: center;	}
+@mixin flex-col-cv	{	display: flex;	flex-direction: column;		justify-content: center;							}
+@mixin flex-col-cc	{	display: flex;	flex-direction: column;		justify-content: center;	align-items: center;	}
+@mixin fx-row-left		{	justify-content: flex-start;	}
+@mixin fx-row-right		{	justify-content: flex-end;		}
+@mixin fx-row-between	{	justify-content: space-between;	}
+@mixin fx-col-left		{	align-items: flex-start;		}
+@mixin fx-col-right		{	align-items: flex-end;			}
+@mixin fx-col-between	{	align-content: space-between;	}
+@mixin fx-grow-1 {	flex-grow: 1;		}
+@mixin fx-grow-2 {	flex-grow: 2;		}
+@mixin fx-wrap   {	flex-wrap: wrap;	}

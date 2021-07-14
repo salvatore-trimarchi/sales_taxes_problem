@@ -1,0 +1,27 @@
+/**********************************
+ * HEADER
+ * structure
+ */ 
+
+header {
+	@include flex-row-cv; 
+	@include fx-row-between; 
+	height: 80px;
+	padding: 5px 15px;
+	background-color: $green;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+	margin-bottom: 50px;
+	.select_box {
+		label {
+			margin-right: 5px;
+		}
+		select {
+			padding: 5px 10px;
+			outline: none;
+			border: none;
+			border-radius: 5px;
+			background-color: $white;	
+		}
+	}
+}
+

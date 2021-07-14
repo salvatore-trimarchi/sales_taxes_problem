@@ -1,0 +1,58 @@
+/**********************************
+ * COMMON
+ * utility
+ */
+
+// % PROLEGOMENA % 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: $white;
+	color: $black;
+	font-size: 14px;
+	line-height: 1.6em;
+}
+#app {
+	@include flex-col; 
+	height: 100vh;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: $black;
+	&:hover {
+		color: $realwhite;
+	}
+}
+
+// % TEXTS % 
+.txt_1 {
+	font-style: italic;
+	color: $middle_grey;
+}
+.txt_2 {
+	font-weight: 500;
+}
+.txt_3 {
+	font-size: 0.7em;
+	padding: 2px 4px;
+	border-radius: 3px;
+	background-color: $green;
+	color: $realwhite;
+}
+
+// % CARD % 
+.card {
+	margin: 30px 15px 30px;
+	padding: 30px 50px;
+	color: $black;
+	border-radius: 5px;
+	background-color: $realwhite;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}

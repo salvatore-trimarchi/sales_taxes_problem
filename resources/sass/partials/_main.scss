@@ -1,0 +1,35 @@
+/**********************************
+ * MAIN
+ * structure
+ */
+
+main {
+	@include fx-grow-1;
+	.display_panel {
+		@include flex-col-co;
+		.head {
+			margin-bottom: 15px;
+		}
+		.table { 
+			display: table; 
+			border-collapse: collapse; 
+			.tr	{ 
+				display: table-row; 
+				& > div { 
+					display: table-cell; 
+					padding: 0 15px; 
+					text-align: right; 
+				}
+				& > div:first-child { 
+					text-align: left; 
+				}
+				&.tr-bottom-line { 
+					border-bottom: 1px solid $white; 
+				}
+				&.tr-top-padding > div { 
+					padding-top: 15px; 
+				}
+			}
+		}		
+	}
+}

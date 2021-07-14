@@ -1,0 +1,145 @@
+/**********************************
+ * VARIABLES
+ * utility
+ */
+/**********************************
+ * MIXIN
+ * utility
+ */
+/**********************************
+ * COMMON
+ * utility
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #eaeaea;
+  color: #3c3c3c;
+  font-size: 14px;
+  line-height: 1.6em;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #3c3c3c;
+}
+a:hover {
+  color: #fafafa;
+}
+
+.txt_1 {
+  font-style: italic;
+  color: #858585;
+}
+
+.txt_2 {
+  font-weight: 500;
+}
+
+.txt_3 {
+  font-size: 0.7em;
+  padding: 2px 4px;
+  border-radius: 3px;
+  background-color: #00c864;
+  color: #fafafa;
+}
+
+.card {
+  margin: 30px 15px 30px;
+  padding: 30px 50px;
+  color: #3c3c3c;
+  border-radius: 5px;
+  background-color: #fafafa;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+/**********************************
+ * HEADER
+ * structure
+ */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 5px 15px;
+  background-color: #00c864;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  margin-bottom: 50px;
+}
+header .select_box label {
+  margin-right: 5px;
+}
+header .select_box select {
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #eaeaea;
+}
+
+/**********************************
+ * MAIN
+ * structure
+ */
+main {
+  flex-grow: 1;
+}
+main .display_panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .display_panel .head {
+  margin-bottom: 15px;
+}
+main .display_panel .table {
+  display: table;
+  border-collapse: collapse;
+}
+main .display_panel .table .tr {
+  display: table-row;
+}
+main .display_panel .table .tr > div {
+  display: table-cell;
+  padding: 0 15px;
+  text-align: right;
+}
+main .display_panel .table .tr > div:first-child {
+  text-align: left;
+}
+main .display_panel .table .tr.tr-bottom-line {
+  border-bottom: 1px solid #eaeaea;
+}
+main .display_panel .table .tr.tr-top-padding > div {
+  padding-top: 15px;
+}
+
+/**********************************
+ * HEADER
+ * structure
+ */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  padding: 5px 15px;
+  background-color: #00c864;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px -6px 12px -2px, rgba(0, 0, 0, 0.3) 0px -3px 7px -3px;
+}
